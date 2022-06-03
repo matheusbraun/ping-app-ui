@@ -1,0 +1,101 @@
+.ping-app-header {
+  padding: 20px;
+  background-color: lightblue;
+  margin-bottom: 20px;
+}
+
+.ping-app {
+  max-width: 1140px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+  &__error {
+    padding: 20px 10px;
+    background-color: rgb(247, 63, 100);
+    color: white;
+    width: 50%;
+    border-radius: 4px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    button {
+      padding: 10px 15px;
+
+      width: 240px;
+      border: 0;
+      border-radius: 4px;
+      background-color: blue;
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+
+      transition: filter ease 0.8s;
+
+      &:hover {
+        filter: brightness(0.7);
+        cursor: pointer;
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+        filter: brightness(0.7);
+      }
+    }
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    width: 50%;
+
+    label {
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    textarea {
+      padding: 5px 10px;
+    }
+  }
+
+  &__input-error {
+    color: red;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 3px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+  }
+
+  &__status-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 2px;
+
+    p {
+      margin-right: 15px;
+    }
+  }
+}
